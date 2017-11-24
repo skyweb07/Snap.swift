@@ -1,12 +1,6 @@
 import XCTest
 import ObjectiveC
 
-public protocol Recordable {
-  var isRecording: Bool { get set }
-}
-
-// MARK: - XCTestcase + Recordable
-
 private var recordingPointer: UInt8 = 0
 
 extension XCTestCase: Recordable {

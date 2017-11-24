@@ -11,6 +11,7 @@
 		1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */; };
 		1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */; };
 		1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
+		1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */; };
 		1C92E5C31FC6E47300EF28C2 /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C92E5B91FC6E47300EF28C2 /* Snap.framework */; };
 		1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */; };
 		1C92E5CA1FC6E47300EF28C2 /* Snap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C92E5BC1FC6E47300EF28C2 /* Snap.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +51,7 @@
 		1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Normalized.swift"; sourceTree = "<group>"; };
 		1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachment.swift; sourceTree = "<group>"; };
 		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
+		1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recordable+XCTestCase.swift"; sourceTree = "<group>"; };
 		1C92E5B91FC6E47300EF28C2 /* Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92E5BC1FC6E47300EF28C2 /* Snap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snap.h; sourceTree = "<group>"; };
 		1C92E5BD1FC6E47300EF28C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				1C92E5BC1FC6E47300EF28C2 /* Snap.h */,
 				1C92E5BD1FC6E47300EF28C2 /* Info.plist */,
+				1C92E5DC1FC6E66900EF28C2 /* Core */,
 			);
 			path = Snap;
 			sourceTree = "<group>";
@@ -129,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */,
-				1C92E5D91FC6E63300EF28C2 /* Snap */,
 				1C92E5C91FC6E47300EF28C2 /* Info.plist */,
 			);
 			path = SnapTests;
@@ -141,14 +143,6 @@
 				1C92E5D71FC6E52100EF28C2 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1C92E5D91FC6E63300EF28C2 /* Snap */ = {
-			isa = PBXGroup;
-			children = (
-				1C92E5DC1FC6E66900EF28C2 /* Core */,
-			);
-			path = Snap;
 			sourceTree = "<group>";
 		};
 		1C92E5DC1FC6E66900EF28C2 /* Core */ = {
@@ -221,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */,
+				1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */,
 			);
 			path = Recordable;
 			sourceTree = "<group>";
@@ -337,6 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C92E5D01FC6E47300EF28C2 /* Build configuration list for PBXNativeTarget "SnapTests" */;
 			buildPhases = (
+				1C7F066C1FC889DC0078CA7A /* Swiftlint */,
 				1C92E5BE1FC6E47300EF28C2 /* Sources */,
 				1C92E5BF1FC6E47300EF28C2 /* Frameworks */,
 				1C92E5C01FC6E47300EF28C2 /* Resources */,
@@ -407,6 +403,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C7F066C1FC889DC0078CA7A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C92E5B41FC6E47300EF28C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -439,6 +452,7 @@
 				1CD1970C1FC839A200263A55 /* Assembly+Actions.swift in Sources */,
 				1C92E60A1FC7825F00EF28C2 /* ExtractViewImage.swift in Sources */,
 				1C92E6011FC714D700EF28C2 /* TestTarget.swift in Sources */,
+				1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */,
 				1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */,
 				1C92E5FD1FC70D5500EF28C2 /* Path.swift in Sources */,
 				1C92E5F41FC70B8A00EF28C2 /* SaveImageToDisk.swift in Sources */,
