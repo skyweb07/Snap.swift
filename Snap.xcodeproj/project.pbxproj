@@ -121,6 +121,7 @@
 			children = (
 				1C92E5BC1FC6E47300EF28C2 /* Snap.h */,
 				1C92E5BD1FC6E47300EF28C2 /* Info.plist */,
+				1C92E5DC1FC6E66900EF28C2 /* Core */,
 			);
 			path = Snap;
 			sourceTree = "<group>";
@@ -129,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */,
-				1C92E5D91FC6E63300EF28C2 /* Snap */,
 				1C92E5C91FC6E47300EF28C2 /* Info.plist */,
 			);
 			path = SnapTests;
@@ -141,14 +141,6 @@
 				1C92E5D71FC6E52100EF28C2 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1C92E5D91FC6E63300EF28C2 /* Snap */ = {
-			isa = PBXGroup;
-			children = (
-				1C92E5DC1FC6E66900EF28C2 /* Core */,
-			);
-			path = Snap;
 			sourceTree = "<group>";
 		};
 		1C92E5DC1FC6E66900EF28C2 /* Core */ = {
