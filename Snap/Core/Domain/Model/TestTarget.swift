@@ -16,11 +16,9 @@ struct TestTarget {
 extension TestTarget {
   func reference(for type: Type) -> Reference {
     // There should be a better way to handle with this ⚠️
-    let bundle = Bundle(for:object_getClass(self)!)
-    let targetName = bundle.bundlePath.components(separatedBy: "/").filter { $0.contains(".xctest") }.first?.replacingOccurrences(of: ".xctest", with: "") ?? ""
     let classFile = file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? ""
     let functionName = function.replacingOccurrences(of: "()", with: "").lowercased()
-    let path = "\(targetName).\(classFile)/"
+    let path = "Snap/\(classFile)/"
     let directory = url.appendingPathComponent(path)
     let pathUrl = directory.appendingPathComponent("\(type.rawValue)_\(functionName)\(scale).png")
     
