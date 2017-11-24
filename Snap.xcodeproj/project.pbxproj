@@ -7,9 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0FF4531FC82229003B8B22 /* UIImage+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4521FC82229003B8B22 /* UIImage+Context.swift */; };
+		1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */; };
+		1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */; };
+		1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
 		1C92E5C31FC6E47300EF28C2 /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C92E5B91FC6E47300EF28C2 /* Snap.framework */; };
 		1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */; };
 		1C92E5CA1FC6E47300EF28C2 /* Snap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C92E5BC1FC6E47300EF28C2 /* Snap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C92E5E11FC6E87000EF28C2 /* UIView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */; };
+		1C92E5E51FC6F25500EF28C2 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E41FC6F25500EF28C2 /* Expectation.swift */; };
+		1C92E5E81FC6F28500EF28C2 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E71FC6F28500EF28C2 /* Matcher.swift */; };
+		1C92E5EA1FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */; };
+		1C92E5EC1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift */; };
+		1C92E5EF1FC6F99100EF28C2 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */; };
+		1C92E5F41FC70B8A00EF28C2 /* SaveImageToDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */; };
+		1C92E5F81FC70C3B00EF28C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F71FC70C3B00EF28C2 /* Environment.swift */; };
+		1C92E5FA1FC70CAD00EF28C2 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F91FC70CAD00EF28C2 /* ApplicationEnvironment.swift */; };
+		1C92E5FD1FC70D5500EF28C2 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5FC1FC70D5500EF28C2 /* Path.swift */; };
+		1C92E6011FC714D700EF28C2 /* TestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6001FC714D700EF28C2 /* TestTarget.swift */; };
+		1C92E6031FC71DC400EF28C2 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6021FC71DC400EF28C2 /* Reference.swift */; };
+		1C92E6051FC736FF00EF28C2 /* CompareImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6041FC736FF00EF28C2 /* CompareImages.swift */; };
+		1C92E6081FC742AA00EF28C2 /* UIImage+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6071FC742AA00EF28C2 /* UIImage+Compare.swift */; };
+		1C92E60A1FC7825F00EF28C2 /* ExtractViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */; };
+		1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197091FC8397E00263A55 /* Assembly.swift */; };
+		1CD1970C1FC839A200263A55 /* Assembly+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */; };
+		1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */; };
+		1CD197121FC839C400263A55 /* Assembly+Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197111FC839C400263A55 /* Assembly+Matchers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +46,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0FF4521FC82229003B8B22 /* UIImage+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Context.swift"; sourceTree = "<group>"; };
+		1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Normalized.swift"; sourceTree = "<group>"; };
+		1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachment.swift; sourceTree = "<group>"; };
+		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
 		1C92E5B91FC6E47300EF28C2 /* Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92E5BC1FC6E47300EF28C2 /* Snap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snap.h; sourceTree = "<group>"; };
 		1C92E5BD1FC6E47300EF28C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C92E5C21FC6E47300EF28C2 /* SnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapTests.swift; sourceTree = "<group>"; };
 		1C92E5C91FC6E47300EF28C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C92E5D71FC6E52100EF28C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Render.swift"; sourceTree = "<group>"; };
+		1C92E5E41FC6F25500EF28C2 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		1C92E5E71FC6F28500EF28C2 /* Matcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
+		1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewMatcher.swift; sourceTree = "<group>"; };
+		1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewExpecation.swift; sourceTree = "<group>"; };
+		1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordable.swift; sourceTree = "<group>"; };
+		1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageToDisk.swift; sourceTree = "<group>"; };
+		1C92E5F71FC70C3B00EF28C2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1C92E5F91FC70CAD00EF28C2 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
+		1C92E5FC1FC70D5500EF28C2 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		1C92E6001FC714D700EF28C2 /* TestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTarget.swift; sourceTree = "<group>"; };
+		1C92E6021FC71DC400EF28C2 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		1C92E6041FC736FF00EF28C2 /* CompareImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareImages.swift; sourceTree = "<group>"; };
+		1C92E6071FC742AA00EF28C2 /* UIImage+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Compare.swift"; sourceTree = "<group>"; };
+		1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractViewImage.swift; sourceTree = "<group>"; };
+		1CD197091FC8397E00263A55 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Actions.swift"; sourceTree = "<group>"; };
+		1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Utils.swift"; sourceTree = "<group>"; };
+		1CD197111FC839C400263A55 /* Assembly+Matchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Matchers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +103,7 @@
 				1C92E5BB1FC6E47300EF28C2 /* Snap */,
 				1C92E5C61FC6E47300EF28C2 /* SnapTests */,
 				1C92E5BA1FC6E47300EF28C2 /* Products */,
+				1C92E5D61FC6E52100EF28C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +129,176 @@
 			isa = PBXGroup;
 			children = (
 				1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */,
+				1C92E5D91FC6E63300EF28C2 /* Snap */,
 				1C92E5C91FC6E47300EF28C2 /* Info.plist */,
 			);
 			path = SnapTests;
+			sourceTree = "<group>";
+		};
+		1C92E5D61FC6E52100EF28C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5D71FC6E52100EF28C2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C92E5D91FC6E63300EF28C2 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5DC1FC6E66900EF28C2 /* Core */,
+			);
+			path = Snap;
+			sourceTree = "<group>";
+		};
+		1C92E5DC1FC6E66900EF28C2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5E21FC6F24200EF28C2 /* Application */,
+				1C92E5FE1FC714C200EF28C2 /* Domain */,
+				1C92E5DD1FC6E85300EF28C2 /* Infrastructure */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1C92E5DD1FC6E85300EF28C2 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1CD197081FC8393100263A55 /* Assembly */,
+				1C92E5DE1FC6E85B00EF28C2 /* Extension */,
+				1C92E5F51FC70C2800EF28C2 /* Utils */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		1C92E5DE1FC6E85B00EF28C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E6061FC7429D00EF28C2 /* UIImage */,
+				1C92E5DF1FC6E86500EF28C2 /* UIView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1C92E5DF1FC6E86500EF28C2 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		1C92E5E21FC6F24200EF28C2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5F01FC7086A00EF28C2 /* Actions */,
+				1C92E5ED1FC6F98A00EF28C2 /* Recordable */,
+				1C92E5E31FC6F24B00EF28C2 /* Expectation */,
+				1C92E5E61FC6F27900EF28C2 /* Matcher */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1C92E5E31FC6F24B00EF28C2 /* Expectation */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5E41FC6F25500EF28C2 /* Expectation.swift */,
+				1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift */,
+			);
+			path = Expectation;
+			sourceTree = "<group>";
+		};
+		1C92E5E61FC6F27900EF28C2 /* Matcher */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5E71FC6F28500EF28C2 /* Matcher.swift */,
+				1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */,
+			);
+			path = Matcher;
+			sourceTree = "<group>";
+		};
+		1C92E5ED1FC6F98A00EF28C2 /* Recordable */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */,
+			);
+			path = Recordable;
+			sourceTree = "<group>";
+		};
+		1C92E5F01FC7086A00EF28C2 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */,
+				1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */,
+				1C92E6041FC736FF00EF28C2 /* CompareImages.swift */,
+				1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		1C92E5F51FC70C2800EF28C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5FB1FC70D4E00EF28C2 /* Path */,
+				1C92E5F61FC70C3300EF28C2 /* Environment */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1C92E5F61FC70C3300EF28C2 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5F71FC70C3B00EF28C2 /* Environment.swift */,
+				1C92E5F91FC70CAD00EF28C2 /* ApplicationEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		1C92E5FB1FC70D4E00EF28C2 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5FC1FC70D5500EF28C2 /* Path.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		1C92E5FE1FC714C200EF28C2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E5FF1FC714C200EF28C2 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1C92E5FF1FC714C200EF28C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E6001FC714D700EF28C2 /* TestTarget.swift */,
+				1C92E6021FC71DC400EF28C2 /* Reference.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C92E6061FC7429D00EF28C2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				1C92E6071FC742AA00EF28C2 /* UIImage+Compare.swift */,
+				1C0FF4521FC82229003B8B22 /* UIImage+Context.swift */,
+				1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */,
+				1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		1CD197081FC8393100263A55 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1CD197091FC8397E00263A55 /* Assembly.swift */,
+				1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */,
+				1CD197111FC839C400263A55 /* Assembly+Matchers.swift */,
+				1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +363,7 @@
 				TargetAttributes = {
 					1C92E5B81FC6E47300EF28C2 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					1C92E5C11FC6E47300EF28C2 = {
@@ -203,7 +419,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C92E6031FC71DC400EF28C2 /* Reference.swift in Sources */,
+				1C92E5E51FC6F25500EF28C2 /* Expectation.swift in Sources */,
+				1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */,
 				1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */,
+				1C0FF4531FC82229003B8B22 /* UIImage+Context.swift in Sources */,
+				1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */,
+				1C92E5EA1FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift in Sources */,
+				1CD197121FC839C400263A55 /* Assembly+Matchers.swift in Sources */,
+				1C92E5E81FC6F28500EF28C2 /* Matcher.swift in Sources */,
+				1C92E5E11FC6E87000EF28C2 /* UIView+Render.swift in Sources */,
+				1C92E6051FC736FF00EF28C2 /* CompareImages.swift in Sources */,
+				1C92E6081FC742AA00EF28C2 /* UIImage+Compare.swift in Sources */,
+				1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */,
+				1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */,
+				1C92E5EF1FC6F99100EF28C2 /* Recordable.swift in Sources */,
+				1C92E5FA1FC70CAD00EF28C2 /* ApplicationEnvironment.swift in Sources */,
+				1C92E5EC1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift in Sources */,
+				1CD1970C1FC839A200263A55 /* Assembly+Actions.swift in Sources */,
+				1C92E60A1FC7825F00EF28C2 /* ExtractViewImage.swift in Sources */,
+				1C92E6011FC714D700EF28C2 /* TestTarget.swift in Sources */,
+				1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */,
+				1C92E5FD1FC70D5500EF28C2 /* Path.swift in Sources */,
+				1C92E5F41FC70B8A00EF28C2 /* SaveImageToDisk.swift in Sources */,
+				1C92E5F81FC70C3B00EF28C2 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +573,7 @@
 		1C92E5CE1FC6E47300EF28C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.Snap;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +596,7 @@
 		1C92E5CF1FC6E47300EF28C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
