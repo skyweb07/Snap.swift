@@ -1,4 +1,4 @@
-<h1 align="center">Snap - Snapshot testing in a snap 🎨</h1>
+<h1 align="center">Snap.swift - Snapshot testing in a snap 🎨</h1>
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
     <a href="https://twitter.com/skyweb07">
@@ -9,7 +9,7 @@
     </a>
 </p>
 
-`Snap` is a snapshot testing library to facilitate the UI testing of your views.
+`Snap.swift` is a snapshot testing library to facilitate the UI testing of your views.
 
 ### 🤖 Requirements
 
@@ -29,13 +29,13 @@ Works by generating a reference image that gets stored in your repository and th
  
 ### 🛠 Configuration
 
-In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap` can find the folder to store the reference images. If the configuration was correctly set the project should look like this:
+In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap.swift` can find the folder to store the reference images. If the configuration was correctly set the project should look like this:
 
 ![Project attachment](.art/xcode_project_environment_variable.png)
 
 ### 🎯 Installation
 
-Snap is available through [CocoaPods](http://cocoapods.org). To install
+Snap.swift is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -87,8 +87,8 @@ This is ok, it just means that our reference images were saved, we can inspect t
 This project is highly inspired on `Facebook` [FBSnapshotTestCase](https://github.com/facebookarchive/ios-snapshot-test-case/) library, it seems that they had archived the library so I started this one to continue envolving the project and continue with mobile `snapshot-testing` 
 
 ### 😬 Contributions 
-- Open an [issue](https://github.com/skyweb07/Snap/issues/new)
-- Add suggestions or fix [issues](https://github.com/skyweb07/Snap/issues) by opening PR's
+- Open an [issue](https://github.com/skyweb07/Snap.swift/issues/new)
+- Add suggestions or fix [issues](https://github.com/skyweb07/Snap.swift/issues) by opening PR's
 - Send me a message via [Twitter](https://twitter.com/skyweb07)
 
 ### ⚖ License
