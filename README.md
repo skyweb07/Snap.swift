@@ -11,13 +11,13 @@
 
 `Snap` is a snapshot testing library to facilitate the UI testing of your views.
 
-## 🤖 Requirements
+### 🤖 Requirements
 
 * iOS 9.0+
 * Xcode 9.0+
 
 
-## 🚀 Getting started 
+### 🚀 Getting started 
 
 ### 🎨 Why test the UI?
 You want to make sure that every time you touch any of your UI elements everything stays as they way they were meant to be, also this kind of integration test help you achieve the pixel perfect views and make your designers happy by having design reference images that they can see even in your pull requests.
@@ -33,13 +33,22 @@ In order to configure the snapshot test folder, we need to add a new environment
 
 ![Project attachment](.art/xcode_project_environment_variable.png)
 
+### 🎯 Installation
+
+Snap is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'Snap.swift'
+```
+
 ### ✅ Creating our first test 
 
 1) We first need to record our reference images, in order to do so we have to first go into our test class and set the `isRecording` variable to be `true` so the library knows that we are in record mode and can extract the `reference images`
 
 ```swift
 import XCTest
-import Snap
+import Snap_swift
 
 class SnapTests: XCTestCase {
   
@@ -77,7 +86,7 @@ This is ok, it just means that our reference images were saved, we can inspect t
 
 This project is highly inspired on `Facebook` [FBSnapshotTestCase](https://github.com/facebookarchive/ios-snapshot-test-case/) library, it seems that they had archived the library so I started this one to continue envolving the project and continue with mobile `snapshot-testing` 
 
-## 😬 Contributions 
+### 😬 Contributions 
 - Open an [issue](https://github.com/skyweb07/Snap/issues/new)
 - Add suggestions or fix [issues](https://github.com/skyweb07/Snap/issues) by opening PR's
 - Send me a message via [Twitter](https://twitter.com/skyweb07)
