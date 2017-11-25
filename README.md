@@ -71,6 +71,7 @@ class SnapTests: XCTestCase {
 > Objective-c
 ```objc
 @import XCTest;
+#import <Snap_swift/Snap_swift-swift.h>
 #import <Snap_swift/Snap.h>
 
 @interface SnapTests : XCTestCase
