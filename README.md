@@ -15,6 +15,7 @@
 
 * iOS 9.0+
 * Xcode 9.0+
+* Swift / Objective-C
 
 
 ### 🚀 Getting started 
@@ -46,6 +47,8 @@ pod 'Snap.swift'
 
 1) We first need to record our reference images, in order to do so we have to first go into our test class and set the `isRecording` variable to be `true` so the library knows that we are in record mode and can extract the `reference images`
 
+> Swift
+
 ```swift
 import XCTest
 import Snap_swift
@@ -65,10 +68,37 @@ class SnapTests: XCTestCase {
 }
 ```
 
+> Objective-c
+```objc
+@import XCTest;
+#import <Snap_swift/Snap.h>
+
+@interface SnapTests : XCTestCase
+@end
+
+@implementation SnapTests
+
+- (void)setUp {
+  [super setUp];
+  self.isRecording = YES;
+}
+
+- (void)test_box_with_text_aligned_to_center {
+
+  UIView *view = [BoxWithTextAlignedToCenterView new];
+  
+  verifyView(view);
+}
+
+@end
+
+```
+
+
 After executing out test suite if everything was ok we should see that all of our tests failed with a warning similar to
 
 ```bash
-⚠️ Test ran in record mode, reference image has been saved to /$SNAP_REFERENCE_IMAGE_PATH/testcase.png, now remove `isRecording` in order to perform the snapshot comparison.
+⚠️ Test ran in record mode, reference image has been saved to $SNAP_REFERENCE_IMAGE_PATH/testcase.png, now remove `isRecording` in order to perform the snapshot comparison.
 
 ```
 

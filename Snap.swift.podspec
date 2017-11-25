@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Snap/Core/**/*'
+  s.source_files = 'Snap/Core/**/*', 'Snap/Core/Infrastructure/Interoperability/*.h'
   s.frameworks = 'UIKit', 'CoreGraphics', 'XCTest'
 end

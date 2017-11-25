@@ -15,9 +15,9 @@
 		1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5051FC9736000E6C817 /* CALayer+Image.swift */; };
 		1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */; };
 		1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */; };
+		1C92A5141FC9808100E6C817 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5131FC9808100E6C817 /* Interoperability.swift */; };
 		1C92E5C31FC6E47300EF28C2 /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C92E5B91FC6E47300EF28C2 /* Snap.framework */; };
 		1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */; };
-		1C92E5CA1FC6E47300EF28C2 /* Snap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C92E5BC1FC6E47300EF28C2 /* Snap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C92E5E11FC6E87000EF28C2 /* UIView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */; };
 		1C92E5E81FC6F28500EF28C2 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E71FC6F28500EF28C2 /* Matcher.swift */; };
 		1C92E5EA1FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */; };
@@ -57,8 +57,9 @@
 		1C92A5051FC9736000E6C817 /* CALayer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Image.swift"; sourceTree = "<group>"; };
 		1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerMatcher.swift; sourceTree = "<group>"; };
 		1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerExpectation.swift; sourceTree = "<group>"; };
+		1C92A5131FC9808100E6C817 /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
+		1C92A5251FC998E200E6C817 /* Snap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snap.h; sourceTree = "<group>"; };
 		1C92E5B91FC6E47300EF28C2 /* Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C92E5BC1FC6E47300EF28C2 /* Snap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snap.h; sourceTree = "<group>"; };
 		1C92E5BD1FC6E47300EF28C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C92E5C21FC6E47300EF28C2 /* SnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapTests.swift; sourceTree = "<group>"; };
@@ -111,6 +112,15 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		1C92A5121FC9808100E6C817 /* Interoperability */ = {
+			isa = PBXGroup;
+			children = (
+				1C92A5131FC9808100E6C817 /* Interoperability.swift */,
+				1C92A5251FC998E200E6C817 /* Snap.h */,
+			);
+			path = Interoperability;
+			sourceTree = "<group>";
+		};
 		1C92E5AF1FC6E47300EF28C2 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +143,6 @@
 		1C92E5BB1FC6E47300EF28C2 /* Snap */ = {
 			isa = PBXGroup;
 			children = (
-				1C92E5BC1FC6E47300EF28C2 /* Snap.h */,
 				1C92E5BD1FC6E47300EF28C2 /* Info.plist */,
 				1C92E5DC1FC6E66900EF28C2 /* Core */,
 			);
@@ -170,6 +179,7 @@
 		1C92E5DD1FC6E85300EF28C2 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				1C92A5121FC9808100E6C817 /* Interoperability */,
 				1CD197081FC8393100263A55 /* Assembly */,
 				1C92E5DE1FC6E85B00EF28C2 /* Extension */,
 				1C92E5F51FC70C2800EF28C2 /* Utils */,
@@ -317,7 +327,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C92E5CA1FC6E47300EF28C2 /* Snap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +387,7 @@
 					};
 					1C92E5C11FC6E47300EF28C2 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -457,6 +467,7 @@
 				1CD197121FC839C400263A55 /* Assembly+Matchers.swift in Sources */,
 				1C92E5E81FC6F28500EF28C2 /* Matcher.swift in Sources */,
 				1C92E5E11FC6E87000EF28C2 /* UIView+Render.swift in Sources */,
+				1C92A5141FC9808100E6C817 /* Interoperability.swift in Sources */,
 				1C92E6051FC736FF00EF28C2 /* CompareImages.swift in Sources */,
 				1C92E6081FC742AA00EF28C2 /* UIImage+Compare.swift in Sources */,
 				1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */,
@@ -648,12 +659,15 @@
 		1C92E5D11FC6E47300EF28C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZGLM2XX3U;
 				INFOPLIST_FILE = SnapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.SnapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -662,12 +676,14 @@
 		1C92E5D21FC6E47300EF28C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZGLM2XX3U;
 				INFOPLIST_FILE = SnapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.SnapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

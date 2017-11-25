@@ -1,7 +1,7 @@
 import XCTest
 import UIKit
 
-class SnapTests: XCTestCase {
+private final class SnapTests: XCTestCase {
   
   func test_box_with_background_color() {
     let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
