@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Snap.swift'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Snapshot testing in a snap'
 
   s.description      = <<-DESC
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Snap/Core/**/*'
+  s.source_files = 'Snap/Core/**/*', 'Snap/Core/Infrastructure/Interoperability/*.h'
   s.frameworks = 'UIKit', 'CoreGraphics', 'XCTest'
 end

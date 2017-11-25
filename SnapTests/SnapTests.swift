@@ -1,7 +1,7 @@
 import XCTest
 import UIKit
 
-class SnapTests: XCTestCase {
+private final class SnapTests: XCTestCase {
   
   func test_box_with_background_color() {
     let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
@@ -20,5 +20,19 @@ class SnapTests: XCTestCase {
     view.addSubview(label)
    
     expect(view).toMatchSnapshot()
+  }
+  
+  func test_box_with_gradient_layer() {
+    let layer = CAGradientLayer()
+    layer.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+    layer.colors = [
+      UIColor.red.cgColor,
+      UIColor.white.cgColor
+    ]
+    layer.locations = [0.0, 1.0]
+    layer.startPoint = CGPoint(x: 0.0, y: 1.0)
+    layer.endPoint = CGPoint(x: 0.0, y: 1.0)
+
+    expect(layer).toMatchSnapshot()
   }
 }

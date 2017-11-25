@@ -1,9 +1,9 @@
 import UIKit
 import XCTest
 
-// MARK: - XCTestCase + Expectation
+// MARK: - XCTestCase + View Expectation
 
-extension XCTestCase: Expectation {
+extension XCTestCase {
   public func expect(_ view: UIView, function: String = #function, file: String = #file ) -> Matcher {
     let testTarget = TestTarget(
       function: function,
