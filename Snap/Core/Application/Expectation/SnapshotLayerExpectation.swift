@@ -1,16 +1,16 @@
 import UIKit
 import XCTest
 
-// MARK: - XCTestCase + Expectation
+// MARK: - XCTestCase + CALayer Expectation
 
-extension XCTestCase: Expectation {
-  public func expect(_ view: UIView, function: String = #function, file: String = #file ) -> Matcher {
+extension XCTestCase {
+  public func expect(_ layer: CALayer, function: String = #function, file: String = #file ) -> Matcher {
     let testTarget = TestTarget(
       function: function,
       file: file
     )
     return resolver.makeMatcher(
-      with: view,
+      with: layer,
       isRecording: isRecording,
       tesTarget: testTarget
     )
