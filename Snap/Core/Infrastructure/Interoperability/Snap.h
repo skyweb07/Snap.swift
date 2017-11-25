@@ -1,5 +1,3 @@
-#import "Snap_Swift-Swift.h"
-
 #define verifyView(view) \
 if (![view isKindOfClass: [UIView class]]) { \
 @throw[NSException exceptionWithName: @"Invalid view" reason: [NSString stringWithFormat: @"View is invalid, you must provider a UIView subclass instead of %@", [view class]] userInfo: nil]; \
