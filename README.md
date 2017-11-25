@@ -61,9 +61,9 @@ class SnapTests: XCTestCase {
   }
 
   func test_box_with_text_aligned_to_center() {
-  	let view = BoxWithTextAlignedToCenterView()
-
-  	expect(view).toMatchSnapshot()
+    let view = BoxWithTextAlignedToCenterView()
+    
+    expect(view).toMatchSnapshot()
   }
 }
 ```
