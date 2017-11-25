@@ -79,10 +79,11 @@ This is ok, it just means that our reference images were saved, we can inspect t
 
 ### ☑ TODO:
 * [ ] Add tests for project
-* [ ] Add `CALayer` matchers
 * [ ] Make device agnostic screenshots
 
 ### 📝 Notes
+
+> As today, you can make assertions on `UIView` and `CALayer` classes.
 
 This project is highly inspired on `Facebook` [FBSnapshotTestCase](https://github.com/facebookarchive/ios-snapshot-test-case/) library, it seems that they had archived the library so I started this one to continue envolving the project and continue with mobile `snapshot-testing` 
 

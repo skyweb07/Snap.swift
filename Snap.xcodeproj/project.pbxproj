@@ -12,14 +12,16 @@
 		1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */; };
 		1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
 		1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */; };
+		1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5051FC9736000E6C817 /* CALayer+Image.swift */; };
+		1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */; };
+		1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */; };
 		1C92E5C31FC6E47300EF28C2 /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C92E5B91FC6E47300EF28C2 /* Snap.framework */; };
 		1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */; };
 		1C92E5CA1FC6E47300EF28C2 /* Snap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C92E5BC1FC6E47300EF28C2 /* Snap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C92E5E11FC6E87000EF28C2 /* UIView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */; };
-		1C92E5E51FC6F25500EF28C2 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E41FC6F25500EF28C2 /* Expectation.swift */; };
 		1C92E5E81FC6F28500EF28C2 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E71FC6F28500EF28C2 /* Matcher.swift */; };
 		1C92E5EA1FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */; };
-		1C92E5EC1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift */; };
+		1C92E5EC1FC6F2E300EF28C2 /* SnapshotViewExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpectation.swift */; };
 		1C92E5EF1FC6F99100EF28C2 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */; };
 		1C92E5F41FC70B8A00EF28C2 /* SaveImageToDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */; };
 		1C92E5F81FC70C3B00EF28C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F71FC70C3B00EF28C2 /* Environment.swift */; };
@@ -52,6 +54,9 @@
 		1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachment.swift; sourceTree = "<group>"; };
 		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
 		1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recordable+XCTestCase.swift"; sourceTree = "<group>"; };
+		1C92A5051FC9736000E6C817 /* CALayer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Image.swift"; sourceTree = "<group>"; };
+		1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerMatcher.swift; sourceTree = "<group>"; };
+		1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerExpectation.swift; sourceTree = "<group>"; };
 		1C92E5B91FC6E47300EF28C2 /* Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92E5BC1FC6E47300EF28C2 /* Snap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snap.h; sourceTree = "<group>"; };
 		1C92E5BD1FC6E47300EF28C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,10 +65,9 @@
 		1C92E5C91FC6E47300EF28C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C92E5D71FC6E52100EF28C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Render.swift"; sourceTree = "<group>"; };
-		1C92E5E41FC6F25500EF28C2 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		1C92E5E71FC6F28500EF28C2 /* Matcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
 		1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewMatcher.swift; sourceTree = "<group>"; };
-		1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewExpecation.swift; sourceTree = "<group>"; };
+		1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewExpectation.swift; sourceTree = "<group>"; };
 		1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordable.swift; sourceTree = "<group>"; };
 		1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageToDisk.swift; sourceTree = "<group>"; };
 		1C92E5F71FC70C3B00EF28C2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -99,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C92A5041FC9735500E6C817 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				1C92A5051FC9736000E6C817 /* CALayer+Image.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
 		1C92E5AF1FC6E47300EF28C2 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +180,7 @@
 		1C92E5DE1FC6E85B00EF28C2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1C92A5041FC9735500E6C817 /* CALayer */,
 				1C92E6061FC7429D00EF28C2 /* UIImage */,
 				1C92E5DF1FC6E86500EF28C2 /* UIView */,
 			);
@@ -196,8 +209,8 @@
 		1C92E5E31FC6F24B00EF28C2 /* Expectation */ = {
 			isa = PBXGroup;
 			children = (
-				1C92E5E41FC6F25500EF28C2 /* Expectation.swift */,
-				1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift */,
+				1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpectation.swift */,
+				1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */,
 			);
 			path = Expectation;
 			sourceTree = "<group>";
@@ -207,6 +220,7 @@
 			children = (
 				1C92E5E71FC6F28500EF28C2 /* Matcher.swift */,
 				1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */,
+				1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */,
 			);
 			path = Matcher;
 			sourceTree = "<group>";
@@ -433,7 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C92E6031FC71DC400EF28C2 /* Reference.swift in Sources */,
-				1C92E5E51FC6F25500EF28C2 /* Expectation.swift in Sources */,
+				1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */,
+				1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */,
 				1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */,
 				1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */,
 				1C0FF4531FC82229003B8B22 /* UIImage+Context.swift in Sources */,
@@ -448,13 +463,14 @@
 				1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */,
 				1C92E5EF1FC6F99100EF28C2 /* Recordable.swift in Sources */,
 				1C92E5FA1FC70CAD00EF28C2 /* ApplicationEnvironment.swift in Sources */,
-				1C92E5EC1FC6F2E300EF28C2 /* SnapshotViewExpecation.swift in Sources */,
+				1C92E5EC1FC6F2E300EF28C2 /* SnapshotViewExpectation.swift in Sources */,
 				1CD1970C1FC839A200263A55 /* Assembly+Actions.swift in Sources */,
 				1C92E60A1FC7825F00EF28C2 /* ExtractViewImage.swift in Sources */,
 				1C92E6011FC714D700EF28C2 /* TestTarget.swift in Sources */,
 				1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */,
 				1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */,
 				1C92E5FD1FC70D5500EF28C2 /* Path.swift in Sources */,
+				1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */,
 				1C92E5F41FC70B8A00EF28C2 /* SaveImageToDisk.swift in Sources */,
 				1C92E5F81FC70C3B00EF28C2 /* Environment.swift in Sources */,
 			);

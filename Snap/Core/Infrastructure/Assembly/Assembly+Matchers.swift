@@ -13,3 +13,16 @@ extension Assembly: SnapshotViewMatcherProvider {
     )
   }
 }
+
+// MARK: - SnapshotLayerMatcherProvider
+
+extension Assembly: SnapshotLayerMatcherProvider {
+  func makeMatcher(with layer: CALayer, isRecording: Bool, tesTarget: TestTarget) -> Matcher {
+    return SnapshotLayerMatcher(
+      layer: layer,
+      isRecording: isRecording,
+      testTarget: tesTarget,
+      viewMatcherProvider: self
+    )
+  }
+}
