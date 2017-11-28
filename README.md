@@ -1,3 +1,6 @@
+<p align="center">
+  <img src=".art/header.png" width="450" height="100" align="center">
+</p>
 <h1 align="center">Snap.swift - Snapshot testing in a snap 🎨</h1>
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
