@@ -13,6 +13,9 @@
 		1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
 		1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */; };
 		1C8D0D561FCDE6AE00A87260 /* CALayerImageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D551FCDE6AE00A87260 /* CALayerImageSpec.swift */; };
+		1C8D0D591FCDE95100A87260 /* UIImageNormalizedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D581FCDE95100A87260 /* UIImageNormalizedSpec.swift */; };
+		1C8D0D5F1FCDEAE800A87260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8D0D5E1FCDEAE800A87260 /* Assets.xcassets */; };
+		1C8D0D611FCDEBF100A87260 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D601FCDEBF100A87260 /* Image.swift */; };
 		1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5051FC9736000E6C817 /* CALayer+Image.swift */; };
 		1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */; };
 		1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */; };
@@ -56,6 +59,9 @@
 		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
 		1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recordable+XCTestCase.swift"; sourceTree = "<group>"; };
 		1C8D0D551FCDE6AE00A87260 /* CALayerImageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerImageSpec.swift; sourceTree = "<group>"; };
+		1C8D0D581FCDE95100A87260 /* UIImageNormalizedSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageNormalizedSpec.swift; sourceTree = "<group>"; };
+		1C8D0D5E1FCDEAE800A87260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C8D0D601FCDEBF100A87260 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1C92A5051FC9736000E6C817 /* CALayer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Image.swift"; sourceTree = "<group>"; };
 		1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerMatcher.swift; sourceTree = "<group>"; };
 		1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerExpectation.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1C8D0D541FCDE68A00A87260 /* CALayer */,
+				1C8D0D571FCDE92900A87260 /* UIImage */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -136,6 +143,31 @@
 				1C8D0D551FCDE6AE00A87260 /* CALayerImageSpec.swift */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		1C8D0D571FCDE92900A87260 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D581FCDE95100A87260 /* UIImageNormalizedSpec.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		1C8D0D5A1FCDEA2D00A87260 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D5B1FCDEA2D00A87260 /* Image */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C8D0D5B1FCDEA2D00A87260 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D601FCDEBF100A87260 /* Image.swift */,
+				1C8D0D5E1FCDEAE800A87260 /* Assets.xcassets */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		1C92A5041FC9735500E6C817 /* CALayer */ = {
@@ -188,6 +220,7 @@
 			children = (
 				1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */,
 				1C8D0D511FCDE68A00A87260 /* Core */,
+				1C8D0D5A1FCDEA2D00A87260 /* Resources */,
 				1C92E5C91FC6E47300EF28C2 /* Info.plist */,
 			);
 			path = SnapTests;
@@ -457,6 +490,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8D0D5F1FCDEAE800A87260 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +527,7 @@
 			files = (
 				1C92E6031FC71DC400EF28C2 /* Reference.swift in Sources */,
 				1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */,
+				1C8D0D611FCDEBF100A87260 /* Image.swift in Sources */,
 				1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */,
 				1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */,
 				1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */,
@@ -506,6 +541,7 @@
 				1C92E6051FC736FF00EF28C2 /* CompareImages.swift in Sources */,
 				1C92E6081FC742AA00EF28C2 /* UIImage+Compare.swift in Sources */,
 				1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */,
+				1C8D0D591FCDE95100A87260 /* UIImageNormalizedSpec.swift in Sources */,
 				1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */,
 				1C92E5EF1FC6F99100EF28C2 /* Recordable.swift in Sources */,
 				1C92E5FA1FC70CAD00EF28C2 /* ApplicationEnvironment.swift in Sources */,
