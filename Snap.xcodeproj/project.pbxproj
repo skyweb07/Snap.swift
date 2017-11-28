@@ -12,6 +12,7 @@
 		1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */; };
 		1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
 		1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */; };
+		1C8D0D561FCDE6AE00A87260 /* CALayerImageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D551FCDE6AE00A87260 /* CALayerImageSpec.swift */; };
 		1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5051FC9736000E6C817 /* CALayer+Image.swift */; };
 		1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */; };
 		1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */; };
@@ -54,6 +55,7 @@
 		1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachment.swift; sourceTree = "<group>"; };
 		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
 		1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recordable+XCTestCase.swift"; sourceTree = "<group>"; };
+		1C8D0D551FCDE6AE00A87260 /* CALayerImageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerImageSpec.swift; sourceTree = "<group>"; };
 		1C92A5051FC9736000E6C817 /* CALayer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Image.swift"; sourceTree = "<group>"; };
 		1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerMatcher.swift; sourceTree = "<group>"; };
 		1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerExpectation.swift; sourceTree = "<group>"; };
@@ -104,6 +106,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C8D0D511FCDE68A00A87260 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D521FCDE68A00A87260 /* Infrastructure */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1C8D0D521FCDE68A00A87260 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D531FCDE68A00A87260 /* Extension */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		1C8D0D531FCDE68A00A87260 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D541FCDE68A00A87260 /* CALayer */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1C8D0D541FCDE68A00A87260 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D0D551FCDE6AE00A87260 /* CALayerImageSpec.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
 		1C92A5041FC9735500E6C817 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				1C92E5C71FC6E47300EF28C2 /* SnapTests.swift */,
+				1C8D0D511FCDE68A00A87260 /* Core */,
 				1C92E5C91FC6E47300EF28C2 /* Info.plist */,
 			);
 			path = SnapTests;
@@ -479,6 +514,7 @@
 				1C92E60A1FC7825F00EF28C2 /* ExtractViewImage.swift in Sources */,
 				1C92E6011FC714D700EF28C2 /* TestTarget.swift in Sources */,
 				1C7F066B1FC884110078CA7A /* Recordable+XCTestCase.swift in Sources */,
+				1C8D0D561FCDE6AE00A87260 /* CALayerImageSpec.swift in Sources */,
 				1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */,
 				1C92E5FD1FC70D5500EF28C2 /* Path.swift in Sources */,
 				1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */,
