@@ -50,6 +50,9 @@ struct CompareImages {
     } catch CompareError.notEqualMetadata {
       self.process(failedImage: processedImage, reference: referenceImage)
       XCTFail("👾 Images have different metadata information")
+    } catch CompareError.invalidReferenceImage {
+      self.process(failedImage: processedImage, reference: referenceImage)
+      XCTFail("👾 Invalid reference image")
     } catch {
       self.process(failedImage: processedImage, reference: referenceImage)
       XCTFail("🚫 Unknown error")
