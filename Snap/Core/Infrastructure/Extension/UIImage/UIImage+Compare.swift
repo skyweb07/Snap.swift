@@ -2,6 +2,7 @@ import UIKit
 import CoreGraphics
 
 enum CompareError: Error {
+  case invalidReferenceImage
   case invalidImageSize
   case notEqualSize(referenceSize: CGSize, comparedSize: CGSize)
   case notEquals
@@ -12,7 +13,8 @@ extension UIImage {
   /// Compare two images using different approaches (size, metadata, bytes)
   /// - Warning: This methods throws **CompareError**
   func compare(with image: UIImage) throws {
-    let referenceImageSize = CGSize(width: cgImage!.width, height: cgImage!.height)
+    guard let cgImage = cgImage else { throw CompareError.invalidReferenceImage }
+    let referenceImageSize = CGSize(width: cgImage.width, height: cgImage.height)
     let imageSize = CGSize(width: image.cgImage!.width, height: image.cgImage!.height)
     
     let imagesAreTheSameSize = referenceImageSize == imageSize
@@ -30,12 +32,12 @@ extension UIImage {
       fatalError("👾 Cannot create image context")
     }
  
-    referenceImageContext.draw(cgImage!, in: CGRect(x: 0, y: 0, width: Int(referenceImageSize.width), height: Int(referenceImageContext.height)))
+    referenceImageContext.draw(cgImage, in: CGRect(x: 0, y: 0, width: Int(referenceImageSize.width), height: Int(referenceImageContext.height)))
     imageContext.draw(image.cgImage!, in: CGRect(x: 0, y: 0, width: Int(imageSize.width), height: Int(imageSize.height)))
     
     try compareMetadata(from: referenceImageContext, matches: imageContext)
 
-    let minBytesPerRow = min(cgImage!.bytesPerRow, image.cgImage!.bytesPerRow)
+    let minBytesPerRow = min(cgImage.bytesPerRow, image.cgImage!.bytesPerRow)
     let referenceImageSizeBytes = Int(referenceImageSize.height) * minBytesPerRow
     
     // Do a lexicographically comparsion using the object representations, not the object values (byte array check)

@@ -16,6 +16,7 @@
 		1C8D0D591FCDE95100A87260 /* UIImageNormalizedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D581FCDE95100A87260 /* UIImageNormalizedSpec.swift */; };
 		1C8D0D5F1FCDEAE800A87260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8D0D5E1FCDEAE800A87260 /* Assets.xcassets */; };
 		1C8D0D611FCDEBF100A87260 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D601FCDEBF100A87260 /* Image.swift */; };
+		1C8D0D631FCDED8900A87260 /* UIImageCompareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D0D621FCDED8900A87260 /* UIImageCompareSpec.swift */; };
 		1C92A5061FC9736000E6C817 /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5051FC9736000E6C817 /* CALayer+Image.swift */; };
 		1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */; };
 		1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */; };
@@ -62,6 +63,7 @@
 		1C8D0D581FCDE95100A87260 /* UIImageNormalizedSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageNormalizedSpec.swift; sourceTree = "<group>"; };
 		1C8D0D5E1FCDEAE800A87260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8D0D601FCDEBF100A87260 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		1C8D0D621FCDED8900A87260 /* UIImageCompareSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageCompareSpec.swift; sourceTree = "<group>"; };
 		1C92A5051FC9736000E6C817 /* CALayer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Image.swift"; sourceTree = "<group>"; };
 		1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerMatcher.swift; sourceTree = "<group>"; };
 		1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLayerExpectation.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1C8D0D581FCDE95100A87260 /* UIImageNormalizedSpec.swift */,
+				1C8D0D621FCDED8900A87260 /* UIImageCompareSpec.swift */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */,
 				1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */,
 				1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */,
+				1C8D0D631FCDED8900A87260 /* UIImageCompareSpec.swift in Sources */,
 				1C0FF4531FC82229003B8B22 /* UIImage+Context.swift in Sources */,
 				1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */,
 				1C92E5EA1FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift in Sources */,
