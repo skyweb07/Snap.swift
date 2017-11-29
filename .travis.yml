@@ -1,5 +1,9 @@
 language: objective-c
 osx_image: xcode9
 
+install:
+  - ./.scripts/install-swiftlint.sh
+
 script:
+  - swiftlint 
   - xcodebuild -scheme Snap -project ./Snap.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' test
