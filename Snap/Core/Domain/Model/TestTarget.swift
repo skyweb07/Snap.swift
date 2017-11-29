@@ -18,7 +18,7 @@ extension TestTarget {
     // There should be a better way to handle with this ⚠️
     let classFile = file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? ""
     let functionName = function.replacingOccurrences(of: "()", with: "").lowercased()
-    let path = "Snap/\(classFile)/"
+    let path = "\(self.path(for: type))\(classFile)/"
     let directory = url.appendingPathComponent(path)
     let pathUrl = directory.appendingPathComponent("\(type.rawValue)_\(functionName)\(scale).png")
     
@@ -46,5 +46,16 @@ extension TestTarget {
       fatalError("🚫 Provided path ['\(referenceImagePath)'] for `\(Path.referenceImage)` is invalid")
     }
     return url
+  }
+  
+  private func path(for type: Type) -> String {
+    switch type {
+    case .reference:
+      return "Snap/"
+    case .failed:
+      return "Snap/Failed/"
+    case .diff:
+      return "Snap/Diff/"
+    }
   }
 }

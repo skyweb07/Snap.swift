@@ -38,6 +38,8 @@ In order to configure the snapshot test folder, we need to add a new environment
 
 ![Project attachment](.art/xcode_project_environment_variable.png)
 
+> Errored images and diffed one's are stored into `$PATH/Snap/Failed` and `$PATH/Snap/Diff`, if you want you can add those paths into `.gitignore` as these are not needed for `Snap.swift` to work.
+
 ### 🎯 Installation
 
 Snap.swift is available through [CocoaPods](http://cocoapods.org). To install
