@@ -1,5 +1,9 @@
+<p align="center">
+  <img src=".art/header.png" width="450" height="100" align="center">
+</p>
 <h1 align="center">Snap.swift - Snapshot testing in a snap 🎨</h1>
 <p align="center">
+    <img src="https://travis-ci.org/skyweb07/Snap.swift.svg?branch=feature%2Fintegrate-tracis-ci"/>
     <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
     <a href="https://twitter.com/skyweb07">
         <img src="https://img.shields.io/badge/contact-@skyweb07-blue.svg?style=flat" alt="Twitter: @skyweb07" />
@@ -33,6 +37,8 @@ Works by generating a reference image that gets stored in your repository and th
 In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap.swift` can find the folder to store the reference images. If the configuration was correctly set the project should look like this:
 
 ![Project attachment](.art/xcode_project_environment_variable.png)
+
+> Errored images and diffed one's are stored into `$PATH/Snap/Failed` and `$PATH/Snap/Diff`, if you want you can add those paths into `.gitignore` as these are not needed for `Snap.swift` to work.
 
 ### 🎯 Installation
 
