@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode9
+
+script:
+  - xcodebuild -scheme Snap -project ./Snap.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' test
