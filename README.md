@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Snap.swift - Snapshot testing in a snap 🎨</h1>
 <p align="center">
-    <img src="https://travis-ci.org/skyweb07/Snap.swift.svg?branch=feature%2Fintegrate-tracis-ci"/>
+    <img src="https://travis-ci.org/skyweb07/Snap.swift.svg?branch=develop"/>
     <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
     <a href="https://twitter.com/skyweb07">
         <img src="https://img.shields.io/badge/contact-@skyweb07-blue.svg?style=flat" alt="Twitter: @skyweb07" />
