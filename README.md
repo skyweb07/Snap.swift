@@ -17,7 +17,7 @@
 
 ### 🤖 Requirements
 
-* iOS 9.0+,
+* iOS 9.0+
 * tvOS 10.0+
 * Xcode 9.0+
 * Swift / Objective-C
