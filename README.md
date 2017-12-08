@@ -38,7 +38,11 @@ Works by generating a reference image that gets stored in your repository and th
 
 ### 🛠 Configuration
 
-In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap.swift` can find the folder to store the reference images. If the configuration was correctly set the project should look like this:
+In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap.swift` can find the folder to store the reference images.
+
+It is also very important that the "Shared" checkbox at the very bottom is activated, so those settings are tracked in your repo and shared we your team.
+
+If the configuration was correctly set the project should look like this:
 
 ![Project attachment](.art/xcode_project_environment_variable.png)
 
