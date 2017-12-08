@@ -5,6 +5,7 @@
 <p align="center">
     <img src="https://travis-ci.org/skyweb07/Snap.swift.svg?branch=develop"/>
     <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
+	[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
     <a href="https://twitter.com/skyweb07">
         <img src="https://img.shields.io/badge/contact-@skyweb07-blue.svg?style=flat" alt="Twitter: @skyweb07" />
     </a>
@@ -48,6 +49,12 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Snap.swift'
+```
+
+
+To install with [Carthage](https://github.com/Carthage/Carthage) add the following line to your `Cartfile`:
+```
+github "skyweb07/Snap.swift"
 ```
 
 ### ✅ Creating our first test
