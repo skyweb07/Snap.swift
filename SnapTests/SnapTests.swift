@@ -3,6 +3,10 @@ import UIKit
 
 private final class SnapTests: XCTestCase {
   
+  override func setUp() {
+    // isRecording = true
+  }
+  
   func test_box_with_background_color() {
     let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     view.backgroundColor = .red
@@ -34,5 +38,12 @@ private final class SnapTests: XCTestCase {
     layer.endPoint = CGPoint(x: 0.0, y: 1.0)
 
     expect(layer).toMatchSnapshot()
+  }
+  
+  func test_box_with_custom_name() {
+    let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+    view.backgroundColor = .yellow
+    
+    expect(view).toMatchSnapshot(named: "yellow_box")
   }
 }
