@@ -41,6 +41,7 @@
 		1CD1970C1FC839A200263A55 /* Assembly+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */; };
 		1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */; };
 		1CD197121FC839C400263A55 /* Assembly+Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197111FC839C400263A55 /* Assembly+Matchers.swift */; };
+		1CEF930D1FDA9FC100C5CDA6 /* TestTarget+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Actions.swift"; sourceTree = "<group>"; };
 		1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Utils.swift"; sourceTree = "<group>"; };
 		1CD197111FC839C400263A55 /* Assembly+Matchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Matchers.swift"; sourceTree = "<group>"; };
+		1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestTarget+Reference.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				1C92E6001FC714D700EF28C2 /* TestTarget.swift */,
+				1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */,
 				1C92E6021FC71DC400EF28C2 /* Reference.swift */,
 			);
 			path = Model;
@@ -453,7 +456,7 @@
 				TargetAttributes = {
 					1C92E5B81FC6E47300EF28C2 = {
 						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					1C92E5C11FC6E47300EF28C2 = {
@@ -543,6 +546,7 @@
 				1C92E5E11FC6E87000EF28C2 /* UIView+Render.swift in Sources */,
 				1C92A5141FC9808100E6C817 /* Interoperability.swift in Sources */,
 				1C92E6051FC736FF00EF28C2 /* CompareImages.swift in Sources */,
+				1CEF930D1FDA9FC100C5CDA6 /* TestTarget+Reference.swift in Sources */,
 				1C92E6081FC742AA00EF28C2 /* UIImage+Compare.swift in Sources */,
 				1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */,
 				1C8D0D591FCDE95100A87260 /* UIImageNormalizedSpec.swift in Sources */,
