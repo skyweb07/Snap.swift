@@ -42,6 +42,34 @@
 		1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */; };
 		1CD197121FC839C400263A55 /* Assembly+Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197111FC839C400263A55 /* Assembly+Matchers.swift */; };
 		1CEF930D1FDA9FC100C5CDA6 /* TestTarget+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */; };
+		FC72441E1FDAD1D800DC94E6 /* ExtractViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */; };
+		FC72441F1FDAD1D800DC94E6 /* SaveImageToDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */; };
+		FC7244201FDAD1D800DC94E6 /* CompareImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6041FC736FF00EF28C2 /* CompareImages.swift */; };
+		FC7244211FDAD1D800DC94E6 /* AddAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */; };
+		FC7244221FDAD1D800DC94E6 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EE1FC6F99100EF28C2 /* Recordable.swift */; };
+		FC7244231FDAD1D800DC94E6 /* Recordable+XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F06691FC8840B0078CA7A /* Recordable+XCTestCase.swift */; };
+		FC7244241FDAD1D800DC94E6 /* SnapshotViewExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5EB1FC6F2E300EF28C2 /* SnapshotViewExpectation.swift */; };
+		FC7244251FDAD1D800DC94E6 /* SnapshotLayerExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A50A1FC9776D00E6C817 /* SnapshotLayerExpectation.swift */; };
+		FC7244261FDAD1D800DC94E6 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E71FC6F28500EF28C2 /* Matcher.swift */; };
+		FC7244271FDAD1D800DC94E6 /* SnapshotViewMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E91FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift */; };
+		FC7244281FDAD1D800DC94E6 /* SnapshotLayerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5071FC9759E00E6C817 /* SnapshotLayerMatcher.swift */; };
+		FC7244291FDAD1D800DC94E6 /* TestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6001FC714D700EF28C2 /* TestTarget.swift */; };
+		FC72442A1FDAD1D800DC94E6 /* TestTarget+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */; };
+		FC72442B1FDAD1D800DC94E6 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6021FC71DC400EF28C2 /* Reference.swift */; };
+		FC72442C1FDAD1D800DC94E6 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5131FC9808100E6C817 /* Interoperability.swift */; };
+		FC72442E1FDAD1D800DC94E6 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197091FC8397E00263A55 /* Assembly.swift */; };
+		FC72442F1FDAD1D800DC94E6 /* Assembly+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */; };
+		FC7244301FDAD1D800DC94E6 /* Assembly+Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197111FC839C400263A55 /* Assembly+Matchers.swift */; };
+		FC7244311FDAD1D800DC94E6 /* Assembly+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */; };
+		FC7244321FDAD1D800DC94E6 /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92A5051FC9736000E6C817 /* CALayer+Image.swift */; };
+		FC7244331FDAD1D800DC94E6 /* UIImage+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6071FC742AA00EF28C2 /* UIImage+Compare.swift */; };
+		FC7244341FDAD1D800DC94E6 /* UIImage+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4521FC82229003B8B22 /* UIImage+Context.swift */; };
+		FC7244351FDAD1D800DC94E6 /* UIImage+Normalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */; };
+		FC7244361FDAD1D800DC94E6 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
+		FC7244371FDAD1D800DC94E6 /* UIView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5E01FC6E87000EF28C2 /* UIView+Render.swift */; };
+		FC7244381FDAD1D800DC94E6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5FC1FC70D5500EF28C2 /* Path.swift */; };
+		FC7244391FDAD1D800DC94E6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F71FC70C3B00EF28C2 /* Environment.swift */; };
+		FC72443A1FDAD1D800DC94E6 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F91FC70CAD00EF28C2 /* ApplicationEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -524,6 +552,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7244301FDAD1D800DC94E6 /* Assembly+Matchers.swift in Sources */,
+				FC7244211FDAD1D800DC94E6 /* AddAttachment.swift in Sources */,
+				FC7244361FDAD1D800DC94E6 /* UIImage+Diff.swift in Sources */,
+				FC7244281FDAD1D800DC94E6 /* SnapshotLayerMatcher.swift in Sources */,
+				FC72441F1FDAD1D800DC94E6 /* SaveImageToDisk.swift in Sources */,
+				FC7244311FDAD1D800DC94E6 /* Assembly+Utils.swift in Sources */,
+				FC7244251FDAD1D800DC94E6 /* SnapshotLayerExpectation.swift in Sources */,
+				FC7244271FDAD1D800DC94E6 /* SnapshotViewMatcher.swift in Sources */,
+				FC72442A1FDAD1D800DC94E6 /* TestTarget+Reference.swift in Sources */,
+				FC7244221FDAD1D800DC94E6 /* Recordable.swift in Sources */,
+				FC7244381FDAD1D800DC94E6 /* Path.swift in Sources */,
+				FC7244321FDAD1D800DC94E6 /* CALayer+Image.swift in Sources */,
+				FC7244201FDAD1D800DC94E6 /* CompareImages.swift in Sources */,
+				FC72441E1FDAD1D800DC94E6 /* ExtractViewImage.swift in Sources */,
+				FC72442E1FDAD1D800DC94E6 /* Assembly.swift in Sources */,
+				FC72442B1FDAD1D800DC94E6 /* Reference.swift in Sources */,
+				FC72443A1FDAD1D800DC94E6 /* ApplicationEnvironment.swift in Sources */,
+				FC7244371FDAD1D800DC94E6 /* UIView+Render.swift in Sources */,
+				FC7244231FDAD1D800DC94E6 /* Recordable+XCTestCase.swift in Sources */,
+				FC72442F1FDAD1D800DC94E6 /* Assembly+Actions.swift in Sources */,
+				FC7244331FDAD1D800DC94E6 /* UIImage+Compare.swift in Sources */,
+				FC7244351FDAD1D800DC94E6 /* UIImage+Normalized.swift in Sources */,
+				FC7244261FDAD1D800DC94E6 /* Matcher.swift in Sources */,
+				FC7244391FDAD1D800DC94E6 /* Environment.swift in Sources */,
+				FC7244291FDAD1D800DC94E6 /* TestTarget.swift in Sources */,
+				FC72442C1FDAD1D800DC94E6 /* Interoperability.swift in Sources */,
+				FC7244241FDAD1D800DC94E6 /* SnapshotViewExpectation.swift in Sources */,
+				FC7244341FDAD1D800DC94E6 /* UIImage+Context.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,9 +758,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Snap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					XCTest,
+					"-weak-lswiftXCTest",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.Snap;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -725,9 +791,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Snap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					XCTest,
+					"-weak-lswiftXCTest",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.Snap;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -739,6 +815,7 @@
 		1C92E5D11FC6E47300EF28C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZGLM2XX3U;
@@ -756,6 +833,7 @@
 		1C92E5D21FC6E47300EF28C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZGLM2XX3U;
