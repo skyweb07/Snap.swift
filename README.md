@@ -25,9 +25,6 @@
 * Xcode 9.0+
 * Swift / Objective-C
 
-
-### 🚀 Getting started
-
 ### 🎨 Why test the UI?
 You want to make sure that every time you touch any of your UI elements everything stays as they way they were meant to be, also this kind of integration test help you achieve the pixel perfect views and make your designers happy by having design reference images that they can see even in your pull requests.
 
