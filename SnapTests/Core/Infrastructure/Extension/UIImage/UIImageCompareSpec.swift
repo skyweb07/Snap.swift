@@ -1,6 +1,6 @@
 import XCTest
 
-class UIImageCompareSpec: XCTestCase {
+final class UIImageCompareSpec: XCTestCase {
 
   func test_should_throw_if_image_sizes_are_not_the_equals() throws {
     let image1 = Image.fixture(.camera, from: self)
