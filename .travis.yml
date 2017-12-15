@@ -7,4 +7,4 @@ install:
 
 script:
   - swiftlint 
-  - xcodebuild -scheme Snap -project ./Snap.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' test
+  - xcodebuild -scheme Snap -workspace ./Snap.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 7' test
