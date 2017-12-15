@@ -5,6 +5,9 @@
 <p align="center">
     <img src="https://travis-ci.org/skyweb07/Snap.swift.svg?branch=develop"/>
     <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" />
+    </a>
     <a href="https://twitter.com/skyweb07">
         <img src="https://img.shields.io/badge/contact-@skyweb07-blue.svg?style=flat" alt="Twitter: @skyweb07" />
     </a>
@@ -22,9 +25,6 @@
 * Xcode 9.0+
 * Swift / Objective-C
 
-
-### 🚀 Getting started
-
 ### 🎨 Why test the UI?
 You want to make sure that every time you touch any of your UI elements everything stays as they way they were meant to be, also this kind of integration test help you achieve the pixel perfect views and make your designers happy by having design reference images that they can see even in your pull requests.
 
@@ -35,7 +35,11 @@ Works by generating a reference image that gets stored in your repository and th
 
 ### 🛠 Configuration
 
-In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap.swift` can find the folder to store the reference images. If the configuration was correctly set the project should look like this:
+In order to configure the snapshot test folder, we need to add a new environment variable to the project with name `SNAP_REFERENCE_IMAGE_PATH` and value `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/` so `Snap.swift` can find the folder to store the reference images.
+
+It is also very important that the "Shared" checkbox at the very bottom is activated, so those settings are tracked in your repo and shared with your team.
+
+If the configuration was correctly set the project should look like this:
 
 ![Project attachment](.art/xcode_project_environment_variable.png)
 
@@ -48,6 +52,12 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Snap.swift'
+```
+
+
+To install with [Carthage](https://github.com/Carthage/Carthage) add the following line to your `Cartfile`:
+```
+github "skyweb07/Snap.swift"
 ```
 
 ### ✅ Creating our first test

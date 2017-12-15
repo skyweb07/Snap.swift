@@ -1,7 +1,7 @@
 import XCTest
 import UIKit
 
-class CALayerImageSpec: XCTestCase {
+final class CALayerImageSpec: XCTestCase {
 
   func test_should_render_image_from_calayer() {
     let layer = CALayer()
