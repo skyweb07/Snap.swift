@@ -3,7 +3,7 @@ import UIKit
 // MARK: - SnapshotViewMatcherProvider
 
 extension Assembly: SnapshotViewMatcherProvider {
-  func makeMatcher(with view: UIView, isRecording: Bool, tesTarget: TestTarget) -> Matcher {
+  func makeMatcher(with view: UIView, isRecording: Bool, tesTarget: TestTarget) -> ViewMatcher {
     return SnapshotViewMatcher(
       view: view,
       isRecording: isRecording,
@@ -17,7 +17,7 @@ extension Assembly: SnapshotViewMatcherProvider {
 // MARK: - SnapshotLayerMatcherProvider
 
 extension Assembly: SnapshotLayerMatcherProvider {
-  func makeMatcher(with layer: CALayer, isRecording: Bool, tesTarget: TestTarget) -> Matcher {
+  func makeMatcher(with layer: CALayer, isRecording: Bool, tesTarget: TestTarget) -> LayerMatcher {
     return SnapshotLayerMatcher(
       layer: layer,
       isRecording: isRecording,
