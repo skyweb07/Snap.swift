@@ -4,7 +4,7 @@ import UIKit
 private final class SnapTests: XCTestCase {
   
   override func setUp() {
-    // isRecording = true
+     // isRecording = true
   }
   
   func test_box_with_background_color() {
@@ -45,5 +45,26 @@ private final class SnapTests: XCTestCase {
     view.backgroundColor = .yellow
     
     expect(view).toMatchSnapshot(named: "yellow_box")
+  }
+ 
+  func test_box_with_all_device_configurations() {
+    let view = UIView()
+    view.backgroundColor = .green
+    
+    expect(view).toMatchSnapshot(for: .allDevices)
+  }
+  
+  func test_box_with_iphone_device_configurations() {
+    let view = UIView()
+    view.backgroundColor = .gray
+    
+    expect(view).toMatchSnapshot(for: .iPhoneDevices)
+  }
+  
+  func test_box_with_ipad_device_configurations() {
+    let view = UIView()
+    view.backgroundColor = .purple
+    
+    expect(view).toMatchSnapshot(for: .iPadDevices)
   }
 }
