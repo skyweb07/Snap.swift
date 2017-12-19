@@ -14,8 +14,12 @@ extension TestTarget {
     let path = "\(self.path(for: type))\(classFile)/"
     let directory = url.appendingPathComponent(path)
     let name = (named ?? functionName).replacingOccurrences(of: " ", with: "_")
-    let pathUrl = directory.appendingPathComponent("\(type.rawValue)_\(name)\(scale).png")
-    
+
+    var partialPath = "\(type.rawValue)_"
+    if let deviceName = device?.rawValue {
+      partialPath = "\(partialPath)\(deviceName.lowercased())_"
+    }
+    let pathUrl = directory.appendingPathComponent("\(partialPath)\(name)\(scale).png")
     return Reference(
       directory: directory,
       path: pathUrl

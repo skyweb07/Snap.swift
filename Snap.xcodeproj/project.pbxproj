@@ -11,7 +11,12 @@
 		1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */; };
 		1C0FF4571FC823A5003B8B22 /* AddAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */; };
 		1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */; };
-		1C24D1A91FE7EAA300893C09 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1A81FE7EAA300893C09 /* Device.swift */; };
+		1C24D1AA1FE7EB6C00893C09 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1A81FE7EAA300893C09 /* Device.swift */; };
+		1C24D1AB1FE7EB8200893C09 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1A81FE7EAA300893C09 /* Device.swift */; };
+		1C24D1AE1FE7EF1D00893C09 /* Device+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1AD1FE7EF1D00893C09 /* Device+Size.swift */; };
+		1C24D1AF1FE7EF1D00893C09 /* Device+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1AD1FE7EF1D00893C09 /* Device+Size.swift */; };
+		1C24D1B11FE7F5CA00893C09 /* AllDevices+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1B01FE7F5CA00893C09 /* AllDevices+All.swift */; };
+		1C24D1B21FE7F5CA00893C09 /* AllDevices+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24D1B01FE7F5CA00893C09 /* AllDevices+All.swift */; };
 		1C5B824B1FE3E288006A245B /* TestTargetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B824A1FE3E288006A245B /* TestTargetSpec.swift */; };
 		1C5B824E1FE3E412006A245B /* EnvironmentStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B824D1FE3E412006A245B /* EnvironmentStub.swift */; };
 		1C5B82561FE40666006A245B /* XCTestCase+CustomAsserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B82551FE40666006A245B /* XCTestCase+CustomAsserts.swift */; };
@@ -94,6 +99,8 @@
 		1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachment.swift; sourceTree = "<group>"; };
 		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
 		1C24D1A81FE7EAA300893C09 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		1C24D1AD1FE7EF1D00893C09 /* Device+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Size.swift"; sourceTree = "<group>"; };
+		1C24D1B01FE7F5CA00893C09 /* AllDevices+All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllDevices+All.swift"; sourceTree = "<group>"; };
 		1C5B824A1FE3E288006A245B /* TestTargetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTargetSpec.swift; sourceTree = "<group>"; };
 		1C5B824D1FE3E412006A245B /* EnvironmentStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentStub.swift; sourceTree = "<group>"; };
 		1C5B82551FE40666006A245B /* XCTestCase+CustomAsserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+CustomAsserts.swift"; sourceTree = "<group>"; };
@@ -162,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C24D1AC1FE7EF0500893C09 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				1C24D1AD1FE7EF1D00893C09 /* Device+Size.swift */,
+				1C24D1B01FE7F5CA00893C09 /* AllDevices+All.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 		1C5B82481FE3E274006A245B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +371,7 @@
 		1C92E5DE1FC6E85B00EF28C2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1C24D1AC1FE7EF0500893C09 /* Device */,
 				1C92A5041FC9735500E6C817 /* CALayer */,
 				1C92E6061FC7429D00EF28C2 /* UIImage */,
 				1C92E5DF1FC6E86500EF28C2 /* UIView */,
@@ -720,6 +737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7244301FDAD1D800DC94E6 /* Assembly+Matchers.swift in Sources */,
+				1C24D1B11FE7F5CA00893C09 /* AllDevices+All.swift in Sources */,
 				FC7244211FDAD1D800DC94E6 /* AddAttachment.swift in Sources */,
 				FC7244361FDAD1D800DC94E6 /* UIImage+Diff.swift in Sources */,
 				FC7244281FDAD1D800DC94E6 /* SnapshotLayerMatcher.swift in Sources */,
@@ -728,8 +746,8 @@
 				FC7244251FDAD1D800DC94E6 /* SnapshotLayerExpectation.swift in Sources */,
 				FC7244271FDAD1D800DC94E6 /* SnapshotViewMatcher.swift in Sources */,
 				FC72442A1FDAD1D800DC94E6 /* TestTarget+Reference.swift in Sources */,
-				1C24D1A91FE7EAA300893C09 /* Device.swift in Sources */,
 				FC7244221FDAD1D800DC94E6 /* Recordable.swift in Sources */,
+				1C24D1AB1FE7EB8200893C09 /* Device.swift in Sources */,
 				FC7244381FDAD1D800DC94E6 /* Path.swift in Sources */,
 				FC7244321FDAD1D800DC94E6 /* CALayer+Image.swift in Sources */,
 				FC7244201FDAD1D800DC94E6 /* CompareImages.swift in Sources */,
@@ -737,6 +755,7 @@
 				FC72442E1FDAD1D800DC94E6 /* Assembly.swift in Sources */,
 				FC72442B1FDAD1D800DC94E6 /* Reference.swift in Sources */,
 				FC72443A1FDAD1D800DC94E6 /* ApplicationEnvironment.swift in Sources */,
+				1C24D1AE1FE7EF1D00893C09 /* Device+Size.swift in Sources */,
 				FC7244371FDAD1D800DC94E6 /* UIView+Render.swift in Sources */,
 				FC7244231FDAD1D800DC94E6 /* Recordable+XCTestCase.swift in Sources */,
 				FC72442F1FDAD1D800DC94E6 /* Assembly+Actions.swift in Sources */,
@@ -761,7 +780,9 @@
 				1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */,
 				1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */,
 				1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */,
+				1C24D1AF1FE7EF1D00893C09 /* Device+Size.swift in Sources */,
 				1C8D0D631FCDED8900A87260 /* UIImageCompareSpec.swift in Sources */,
+				1C24D1AA1FE7EB6C00893C09 /* Device.swift in Sources */,
 				1C0FF4531FC82229003B8B22 /* UIImage+Context.swift in Sources */,
 				1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */,
 				1C92E5EA1FC6F2AC00EF28C2 /* SnapshotViewMatcher.swift in Sources */,
@@ -776,6 +797,7 @@
 				1C5B824B1FE3E288006A245B /* TestTargetSpec.swift in Sources */,
 				1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */,
 				1C8D0D591FCDE95100A87260 /* UIImageNormalizedSpec.swift in Sources */,
+				1C24D1B21FE7F5CA00893C09 /* AllDevices+All.swift in Sources */,
 				1C0FF4591FC8294A003B8B22 /* UIImage+Diff.swift in Sources */,
 				1C92E5EF1FC6F99100EF28C2 /* Recordable.swift in Sources */,
 				1C5B82561FE40666006A245B /* XCTestCase+CustomAsserts.swift in Sources */,
