@@ -82,6 +82,23 @@ final class TestTargetSpec: XCTestCase {
     XCTAssertEqual(referencePath.path, expectedPath)
   }
   
+  func test_should_return_correct_path_for_test_target_with_custom_devices() {
+    givenEnvironment()
+    
+    AllDevices.allDevices.all.forEach { device in
+      let reference = givenTestTarget(
+        with: "function name",
+        named: "custom name",
+        device: device
+      )
+      
+      let referencePath = reference.reference(for: .reference).path
+      let expectedPath = "\(currentPath)/Snap/file/reference_\(device.rawValue.lowercased())_custom_name@2x.png"
+      
+      XCTAssertEqual(referencePath.path, expectedPath)
+    }
+  }
+  
   func test_should_return_correct_path_for_different_test_targets() {
     givenEnvironment()
     
@@ -117,12 +134,14 @@ extension TestTargetSpec {
   
   private func givenTestTarget(with function: String = "function",
                                file: String = "file",
-                               named: String? = nil) -> TestTarget
+                               named: String? = nil,
+                               device: Device? = nil) -> TestTarget
   {
     return TestTarget(
       function: function,
       file: file,
       named: named,
+      device: device,
       fileManager: .default,
       environment: environment
     )
