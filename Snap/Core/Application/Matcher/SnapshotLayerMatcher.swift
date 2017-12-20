@@ -1,10 +1,10 @@
 import UIKit
 
 protocol SnapshotLayerMatcherProvider {
-  func makeMatcher(with layer: CALayer, isRecording: Bool, tesTarget: TestTarget) -> Matcher
+  func makeMatcher(with layer: CALayer, isRecording: Bool, tesTarget: TestTarget) -> LayerMatcher
 }
 
-struct SnapshotLayerMatcher: Matcher {
+struct SnapshotLayerMatcher: LayerMatcher {
   
   private let layer: CALayer
   private let isRecording: Bool
