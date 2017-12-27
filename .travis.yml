@@ -1,12 +1,11 @@
 language: objective-c
-cache: cocoapods
 osx_image: xcode9.2
 
 sudo: required
 install:
   - ./.scripts/install-swiftlint.sh
-  - pod install
-
+  - carthage bootstrap --platform iOS
+  
 script:
-  - swiftlint 
-  - xcodebuild -scheme Snap -workspace ./Snap.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 7' test | xcpretty
+  - swiftlint
+  - xcodebuild -scheme Snap -project ./Snap.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' test | xcpretty
