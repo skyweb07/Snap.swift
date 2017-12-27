@@ -51,8 +51,6 @@
 		1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */; };
 		1CD197121FC839C400263A55 /* Assembly+Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197111FC839C400263A55 /* Assembly+Matchers.swift */; };
 		1CEF930D1FDA9FC100C5CDA6 /* TestTarget+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */; };
-		75EDFF3A54FE584F81497817 /* Pods_SnapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F75B2C4707E8B89C6EA0C60 /* Pods_SnapTests.framework */; };
-		D260F0D2E59D051381E2578D /* Pods_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA19B2B7B2A7726EE4ACCB1B /* Pods_Snap.framework */; };
 		FC72441E1FDAD1D800DC94E6 /* ExtractViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */; };
 		FC72441F1FDAD1D800DC94E6 /* SaveImageToDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5F31FC70B8A00EF28C2 /* SaveImageToDisk.swift */; };
 		FC7244201FDAD1D800DC94E6 /* CompareImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6041FC736FF00EF28C2 /* CompareImages.swift */; };
@@ -98,6 +96,8 @@
 		1C0FF4541FC82234003B8B22 /* UIImage+Normalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Normalized.swift"; sourceTree = "<group>"; };
 		1C0FF4561FC823A5003B8B22 /* AddAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachment.swift; sourceTree = "<group>"; };
 		1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Diff.swift"; sourceTree = "<group>"; };
+		1C15A1F81FF439B100FA0E47 /* CwlCatchException.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlCatchException.framework; path = Carthage/Build/iOS/CwlCatchException.framework; sourceTree = "<group>"; };
+		1C15A1F91FF439B100FA0E47 /* CwlPreconditionTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlPreconditionTesting.framework; path = Carthage/Build/iOS/CwlPreconditionTesting.framework; sourceTree = "<group>"; };
 		1C24D1A81FE7EAA300893C09 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		1C24D1AD1FE7EF1D00893C09 /* Device+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Size.swift"; sourceTree = "<group>"; };
 		1C24D1B01FE7F5CA00893C09 /* AllDevices+All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllDevices+All.swift"; sourceTree = "<group>"; };
@@ -140,12 +140,6 @@
 		1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Utils.swift"; sourceTree = "<group>"; };
 		1CD197111FC839C400263A55 /* Assembly+Matchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Matchers.swift"; sourceTree = "<group>"; };
 		1CEF930B1FDA9FB800C5CDA6 /* TestTarget+Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestTarget+Reference.swift"; sourceTree = "<group>"; };
-		560BE953836BE3D24C1C45A9 /* Pods-Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snap/Pods-Snap.release.xcconfig"; sourceTree = "<group>"; };
-		6F75B2C4707E8B89C6EA0C60 /* Pods_SnapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A804418F60776A5AE4188C28 /* Pods-SnapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapTests/Pods-SnapTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D14498CA79AC7192B3C31DBF /* Pods-Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snap/Pods-Snap.debug.xcconfig"; sourceTree = "<group>"; };
-		EA19B2B7B2A7726EE4ACCB1B /* Pods_Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F852769B4219F38340E8ECFF /* Pods-SnapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapTests/Pods-SnapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D260F0D2E59D051381E2578D /* Pods_Snap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C92E5C31FC6E47300EF28C2 /* Snap.framework in Frameworks */,
-				75EDFF3A54FE584F81497817 /* Pods_SnapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +296,6 @@
 				1C92E5C61FC6E47300EF28C2 /* SnapTests */,
 				1C92E5BA1FC6E47300EF28C2 /* Products */,
 				1C92E5D61FC6E52100EF28C2 /* Frameworks */,
-				52BFE47264FBF47A74E3A154 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -340,9 +331,9 @@
 		1C92E5D61FC6E52100EF28C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C15A1F81FF439B100FA0E47 /* CwlCatchException.framework */,
+				1C15A1F91FF439B100FA0E47 /* CwlPreconditionTesting.framework */,
 				1C92E5D71FC6E52100EF28C2 /* XCTest.framework */,
-				EA19B2B7B2A7726EE4ACCB1B /* Pods_Snap.framework */,
-				6F75B2C4707E8B89C6EA0C60 /* Pods_SnapTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -504,17 +495,6 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		52BFE47264FBF47A74E3A154 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D14498CA79AC7192B3C31DBF /* Pods-Snap.debug.xcconfig */,
-				560BE953836BE3D24C1C45A9 /* Pods-Snap.release.xcconfig */,
-				A804418F60776A5AE4188C28 /* Pods-SnapTests.debug.xcconfig */,
-				F852769B4219F38340E8ECFF /* Pods-SnapTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -532,12 +512,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C92E5CD1FC6E47300EF28C2 /* Build configuration list for PBXNativeTarget "Snap" */;
 			buildPhases = (
-				0E7F7AFCCA53F15C4A753503 /* [CP] Check Pods Manifest.lock */,
 				1C92E5B41FC6E47300EF28C2 /* Sources */,
 				1C92E5B51FC6E47300EF28C2 /* Frameworks */,
 				1C92E5B61FC6E47300EF28C2 /* Headers */,
 				1C92E5B71FC6E47300EF28C2 /* Resources */,
-				7D360E1D2DBE8E37464EB9B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -552,13 +530,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C92E5D01FC6E47300EF28C2 /* Build configuration list for PBXNativeTarget "SnapTests" */;
 			buildPhases = (
-				02177E8C983A84F2B8933142 /* [CP] Check Pods Manifest.lock */,
 				1C7F066C1FC889DC0078CA7A /* Swiftlint */,
 				1C92E5BE1FC6E47300EF28C2 /* Sources */,
 				1C92E5BF1FC6E47300EF28C2 /* Frameworks */,
 				1C92E5C01FC6E47300EF28C2 /* Resources */,
-				4B2C956E692B355B2F811DFE /* [CP] Embed Pods Frameworks */,
-				FE26D11976EECC9F3B7F1A3F /* [CP] Copy Pods Resources */,
+				1C15A1FE1FF43CB800FA0E47 /* [Carthage] - Copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -629,41 +605,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02177E8C983A84F2B8933142 /* [CP] Check Pods Manifest.lock */ = {
+		1C15A1FE1FF43CB800FA0E47 /* [Carthage] - Copy frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/Carthage/Build/iOS/CwlCatchException.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CwlPreconditionTesting.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[Carthage] - Copy frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SnapTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0E7F7AFCCA53F15C4A753503 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Snap-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		1C7F066C1FC889DC0078CA7A /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -678,56 +634,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		4B2C956E692B355B2F811DFE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SnapTests/Pods-SnapTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CwlCatchException/CwlCatchException.framework",
-				"${BUILT_PRODUCTS_DIR}/CwlPreconditionTesting/CwlPreconditionTesting.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlCatchException.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlPreconditionTesting.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapTests/Pods-SnapTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D360E1D2DBE8E37464EB9B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snap/Pods-Snap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE26D11976EECC9F3B7F1A3F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapTests/Pods-SnapTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -876,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -930,7 +836,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -942,7 +848,6 @@
 		};
 		1C92E5CE1FC6E47300EF28C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14498CA79AC7192B3C31DBF /* Pods-Snap.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -959,6 +864,7 @@
 				);
 				INFOPLIST_FILE = Snap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -976,7 +882,6 @@
 		};
 		1C92E5CF1FC6E47300EF28C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 560BE953836BE3D24C1C45A9 /* Pods-Snap.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -993,6 +898,7 @@
 				);
 				INFOPLIST_FILE = Snap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -1009,12 +915,15 @@
 		};
 		1C92E5D11FC6E47300EF28C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A804418F60776A5AE4188C28 /* Pods-SnapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZGLM2XX3U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
+				);
 				INFOPLIST_FILE = SnapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.SnapTests;
@@ -1028,12 +937,15 @@
 		};
 		1C92E5D21FC6E47300EF28C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F852769B4219F38340E8ECFF /* Pods-SnapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZGLM2XX3U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"",
+				);
 				INFOPLIST_FILE = SnapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.skydev.SnapTests;
