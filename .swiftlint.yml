@@ -4,7 +4,7 @@ disabled_rules:
 
 excluded:
   - SnapTests
-  - Pods
+  - Carthage
 
 file_length:
   warning: 200
