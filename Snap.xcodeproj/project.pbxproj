@@ -46,6 +46,8 @@
 		1C92E6051FC736FF00EF28C2 /* CompareImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6041FC736FF00EF28C2 /* CompareImages.swift */; };
 		1C92E6081FC742AA00EF28C2 /* UIImage+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6071FC742AA00EF28C2 /* UIImage+Compare.swift */; };
 		1C92E60A1FC7825F00EF28C2 /* ExtractViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */; };
+		1CB13AFE2004F1170092A3BD /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB13AFD2004F1170092A3BD /* Snap.swift */; };
+		1CB13AFF2004F1AE0092A3BD /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB13AFD2004F1170092A3BD /* Snap.swift */; };
 		1CD1970A1FC8397E00263A55 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD197091FC8397E00263A55 /* Assembly.swift */; };
 		1CD1970C1FC839A200263A55 /* Assembly+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */; };
 		1CD1970E1FC839AE00263A55 /* Assembly+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */; };
@@ -135,6 +137,7 @@
 		1C92E6041FC736FF00EF28C2 /* CompareImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareImages.swift; sourceTree = "<group>"; };
 		1C92E6071FC742AA00EF28C2 /* UIImage+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Compare.swift"; sourceTree = "<group>"; };
 		1C92E6091FC7825F00EF28C2 /* ExtractViewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractViewImage.swift; sourceTree = "<group>"; };
+		1CB13AFD2004F1170092A3BD /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		1CD197091FC8397E00263A55 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		1CD1970B1FC839A200263A55 /* Assembly+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Actions.swift"; sourceTree = "<group>"; };
 		1CD1970D1FC839AE00263A55 /* Assembly+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Utils.swift"; sourceTree = "<group>"; };
@@ -381,6 +384,7 @@
 		1C92E5E21FC6F24200EF28C2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1CB13AFC2004F1090092A3BD /* Snap */,
 				1C92E5F01FC7086A00EF28C2 /* Actions */,
 				1C92E5ED1FC6F98A00EF28C2 /* Recordable */,
 				1C92E5E31FC6F24B00EF28C2 /* Expectation */,
@@ -482,6 +486,14 @@
 				1C0FF4581FC8294A003B8B22 /* UIImage+Diff.swift */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		1CB13AFC2004F1090092A3BD /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				1CB13AFD2004F1170092A3BD /* Snap.swift */,
+			);
+			path = Snap;
 			sourceTree = "<group>";
 		};
 		1CD197081FC8393100263A55 /* Assembly */ = {
@@ -661,6 +673,7 @@
 				FC72442E1FDAD1D800DC94E6 /* Assembly.swift in Sources */,
 				FC72442B1FDAD1D800DC94E6 /* Reference.swift in Sources */,
 				FC72443A1FDAD1D800DC94E6 /* ApplicationEnvironment.swift in Sources */,
+				1CB13AFE2004F1170092A3BD /* Snap.swift in Sources */,
 				1C24D1AE1FE7EF1D00893C09 /* Device+Size.swift in Sources */,
 				FC7244371FDAD1D800DC94E6 /* UIView+Render.swift in Sources */,
 				FC7244231FDAD1D800DC94E6 /* Recordable+XCTestCase.swift in Sources */,
@@ -683,6 +696,7 @@
 				1C92E6031FC71DC400EF28C2 /* Reference.swift in Sources */,
 				1C92A50B1FC9776D00E6C817 /* SnapshotLayerExpectation.swift in Sources */,
 				1C8D0D611FCDEBF100A87260 /* Image.swift in Sources */,
+				1CB13AFF2004F1AE0092A3BD /* Snap.swift in Sources */,
 				1C92A5091FC975E400E6C817 /* SnapshotLayerMatcher.swift in Sources */,
 				1C0FF4551FC82234003B8B22 /* UIImage+Normalized.swift in Sources */,
 				1C92E5C81FC6E47300EF28C2 /* SnapTests.swift in Sources */,
