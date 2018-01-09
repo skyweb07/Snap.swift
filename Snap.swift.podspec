@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Snap.swift'
-  s.version          = '0.2.3'
+  s.version          = '0.3.0'
   s.summary          = 'Snapshot testing in a snap'
 
   s.description      = <<-DESC
