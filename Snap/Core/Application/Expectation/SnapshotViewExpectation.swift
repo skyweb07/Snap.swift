@@ -9,6 +9,8 @@ extension XCTestCase {
       function: function,
       file: file
     )
+    view.layoutIfNeeded()
+    
     return resolver.makeMatcher(
       with: view,
       isRecording: isRecording,

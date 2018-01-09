@@ -9,6 +9,8 @@ extension XCTestCase {
       function: function,
       file: file
     )
+    layer.layoutIfNeeded()
+    
     return resolver.makeMatcher(
       with: layer,
       isRecording: isRecording,
