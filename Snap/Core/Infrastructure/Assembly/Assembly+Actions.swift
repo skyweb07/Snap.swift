@@ -18,6 +18,7 @@ extension Assembly {
   var compareImages: CompareImages {
     return CompareImages(
       fileManager: fileManager,
+      config: snapConfig,
       addAttachment: addAttachment,
       saveImageToDisk: saveImageToDisk
     )
@@ -25,5 +26,9 @@ extension Assembly {
   
   private var addAttachment: AddAttachment {
     return AddAttachment()
+  }
+  
+  private var snapConfig: Config {
+    return Snap.config
   }
 }

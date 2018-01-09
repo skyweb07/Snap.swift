@@ -4,14 +4,17 @@ import XCTest
 struct CompareImages {
   
   private let fileManager: FileManager
+  private let config: Config
   private let addAttachment: AddAttachment
   private let saveImageToDisk: SaveImageToDisk
   
   init(fileManager: FileManager,
+       config: Config,
        addAttachment: AddAttachment,
        saveImageToDisk: SaveImageToDisk)
   {
     self.fileManager = fileManager
+    self.config = config
     self.addAttachment = addAttachment
     self.saveImageToDisk = saveImageToDisk
   }
@@ -69,5 +72,12 @@ struct CompareImages {
     guard let diffedImage = reference.diff(with: failedImage) else { return }
     addAttachment.execute(with: diffedImage, type: .diff)
     saveImageToDisk.execute(with: diffedImage, with: testTarget.reference(for: .diff))
+    
+    if config.enableKaleidoscope {
+      let referencePath = testTarget.reference(for: .reference).path
+      let failedPath = testTarget.reference(for: .failed).path
+      
+      print("🌈 Execute this command to see image diff on Kaleidoscope: ksdiff \(referencePath.path) \(failedPath.path)")
+    }
   }
 }
