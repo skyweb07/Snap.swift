@@ -125,10 +125,6 @@ This is ok, it just means that our reference images were saved, we can inspect t
 #### ⚠️ Warning
 > *Remember to remove the `isRecording` flag after generating your reference images or you won't be able to do the image comparison*
 
-### ☑ TODO:
-* [ ] Add tests for project
-* [ ] Make device agnostic screenshots
-
 ### 📝 Notes
 
 > As today, you can make assertions on `UIView` and `CALayer` classes.
@@ -139,6 +135,10 @@ This project is highly inspired on `Facebook` [FBSnapshotTestCase](https://githu
 - Open an [issue](https://github.com/skyweb07/Snap.swift/issues/new)
 - Add suggestions or fix [issues](https://github.com/skyweb07/Snap.swift/issues) by opening PR's
 - Send me a message via [Twitter](https://twitter.com/skyweb07)
+
+### Android 
+
+If you want to apply the same testing technique on Android you can use [Shot](https://github.com/Karumi/Shot)
 
 ### ⚖ License
 ```bash
