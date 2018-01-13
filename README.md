@@ -125,6 +125,18 @@ This is ok, it just means that our reference images were saved, we can inspect t
 #### ⚠️ Warning
 > *Remember to remove the `isRecording` flag after generating your reference images or you won't be able to do the image comparison*
 
+### Multiple device snapshots
+
+If you want to take multiple device snapshots at once it's as simple as:
+
+```swift
+expect(view).toMatchSnapshot(for devices: [.iphone4, .iphone5s]) // A list of devices
+
+// or 
+
+expect(view).toMatchSnapshot(for: .allDevices) // All supported
+```
+
 ### 📝 Notes
 
 > As today, you can make assertions on `UIView` and `CALayer` classes.
