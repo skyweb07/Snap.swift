@@ -68,7 +68,7 @@ github "skyweb07/Snap.swift"
 
 ```swift
 import XCTest
-import Snap_swift
+import Snap
 
 class SnapTests: XCTestCase {
 
@@ -88,8 +88,8 @@ class SnapTests: XCTestCase {
 > Objective-c
 ```objc
 @import XCTest;
-#import <Snap_swift/Snap_swift-swift.h>
-#import <Snap_swift/Snap.h>
+#import <Snap/Snap-swift.h>
+#import <Snap/Snap.h>
 
 @interface SnapTests : XCTestCase
 @end
@@ -120,7 +120,7 @@ After executing out test suite if everything was ok we should see that all of ou
 
 ```
 
-This is ok, it just means that our reference images were saved, we can inspect them in our `reference image` directory, we should normally add these into `git`  so we can compare against them. 
+This is ok, it just means that our reference images were saved, we can inspect them in our `reference image` directory, we should normally add these into `git`  so we can compare against them.
 
 #### ⚠️ Warning
 > *Remember to remove the `isRecording` flag after generating your reference images or you won't be able to do the image comparison*
@@ -132,7 +132,7 @@ If you want to take multiple device snapshots at once it's as simple as:
 ```swift
 expect(view).toMatchSnapshot(for devices: [.iphone4, .iphone5s]) // A list of devices
 
-// or 
+// or
 
 expect(view).toMatchSnapshot(for: .allDevices) // All supported
 ```
@@ -148,7 +148,7 @@ This project is highly inspired on `Facebook` [FBSnapshotTestCase](https://githu
 - Add suggestions or fix [issues](https://github.com/skyweb07/Snap.swift/issues) by opening PR's
 - Send me a message via [Twitter](https://twitter.com/skyweb07)
 
-### Android 
+### Android
 
 If you want to apply the same testing technique on Android you can use [Shot](https://github.com/Karumi/Shot)
 
