@@ -10,7 +10,6 @@ extension UIView {
         bounds: bounds
       )
       return renderer.image { context in
-        drawHierarchy(in: bounds, afterScreenUpdates: true)
         layer.render(in: context.cgContext)
       }
     }
@@ -21,7 +20,6 @@ extension UIView {
     UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0.0)
 
     let context = UIGraphicsGetCurrentContext()!
-    drawHierarchy(in: bounds, afterScreenUpdates: true)
     layer.render(in: context)
     return UIGraphicsGetImageFromCurrentImageContext()
   }
