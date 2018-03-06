@@ -77,7 +77,7 @@ struct CompareImages {
       let referencePath = testTarget.reference(for: .reference).path
       let failedPath = testTarget.reference(for: .failed).path
       
-      print("🌈 Execute this command to see image diff on Kaleidoscope: ksdiff \(referencePath.path) \(failedPath.path)")
+      print("🌈 Execute this command to see image diff on Kaleidoscope:\n\nksdiff \(referencePath.path) \(failedPath.path)\n")
     }
   }
 }
