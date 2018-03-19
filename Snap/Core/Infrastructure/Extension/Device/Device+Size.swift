@@ -1,7 +1,7 @@
 import UIKit
 
 extension Device {
-  var size: CGSize {
+  public var size: CGSize {
     switch self {
     case .iPhone5: return CGSize(width: 320, height: 568)
     case .iPhone8: return CGSize(width: 375, height: 667)
