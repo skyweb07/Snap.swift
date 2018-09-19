@@ -16,4 +16,6 @@ public protocol Nameable {
 public protocol DeviceMatcher {
   func toMatchSnapshot(`for` devices: [Device])
   func toMatchSnapshot(`for` allDevices: AllDevices)
+  func toMatchSnapshot(named name: String?, `for` devices: [Device])
+  func toMatchSnapshot(named name: String?, `for` allDevices: AllDevices)
 }
