@@ -29,13 +29,13 @@ struct SnapshotViewMatcher: ViewMatcher {
     toMatchSnapshot(named: nil)
   }
   
-  func toMatchSnapshot(for devices: [Device]) {
+  func toMatchSnapshot(named: String?, for devices: [Device]) {
     devices.forEach { device in
-      self.toMatchSnapshot(named: nil, with: device)
+      self.toMatchSnapshot(named: named, with: device)
     }
   }
   
-  func toMatchSnapshot(for allDevices: AllDevices) {
+  func toMatchSnapshot(named: String?, for allDevices: AllDevices) {
     var deviceList = [Device]()
     
     switch allDevices {
@@ -48,8 +48,16 @@ struct SnapshotViewMatcher: ViewMatcher {
     }
 
     deviceList.forEach { device in
-      self.toMatchSnapshot(named: nil, with: device)
+      self.toMatchSnapshot(named: named, with: device)
     }
+  }
+
+  func toMatchSnapshot(for devices: [Device]) {
+    self.toMatchSnapshot(named: nil, for: devices)
+  }
+
+  func toMatchSnapshot(for allDevices: AllDevices) {
+    self.toMatchSnapshot(named: nil, for: allDevices)
   }
   
   func toMatchSnapshot(named: String?) {
