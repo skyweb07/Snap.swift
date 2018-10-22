@@ -5,7 +5,8 @@ sudo: required
 install:
   - ./.scripts/install-swiftlint.sh
   - carthage bootstrap --platform iOS
-  
+
 script:
   - swiftlint
   - xcodebuild -scheme Snap -project ./Snap.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' test | xcpretty
+
