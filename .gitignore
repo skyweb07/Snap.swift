@@ -1,1 +1,5 @@
 /Carthage
+xcuserdata/
+.DS_Store
+SnapTests/Snap/Diff/
+SnapTests/Snap/Failed/
